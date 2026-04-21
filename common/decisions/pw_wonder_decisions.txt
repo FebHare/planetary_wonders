@@ -2946,15 +2946,31 @@ pw_decision_religious_persecution = {
 		owner = {
 			has_modifier = pw_holy_reliquary_supremacy_holy_defense
 		}
-		NOT = { has_modifier = pw_holy_reliquary_supremacy_religious_persecution }
-		NOT = { has_modifier = pw_holy_reliquary_supremacy_call_to_arms }
+		nor = {
+			has_modifier = pw_holy_reliquary_supremacy_religious_persecution
+			has_modifier = pw_holy_reliquary_supremacy_religious_persecution_dystopian
+			has_modifier = pw_holy_reliquary_supremacy_call_to_arms
+		}
 	}
 
 	effect = {
-		add_modifier = {
-			modifier = pw_holy_reliquary_supremacy_religious_persecution
-			clear_on_owner_change = yes
-			days = @pw_2years
+		if = {
+			limit = {
+				owner = {
+					has_valid_civic = civic_dystopian_society
+				}
+			}
+			add_modifier = {
+				modifier = pw_holy_reliquary_supremacy_religious_persecution_dystopian
+				clear_on_owner_change = yes
+				days = @pw_2years
+			}
+		} else = {
+			add_modifier = {
+				modifier = pw_holy_reliquary_supremacy_religious_persecution
+				clear_on_owner_change = yes
+				days = @pw_2years
+			}
 		}
 	}
 
@@ -2972,10 +2988,14 @@ pw_decision_end_religious_persecution = {
 	}
 
 	potential = {
-		has_modifier = pw_holy_reliquary_supremacy_religious_persecution
+		or = {
+			has_modifier = pw_holy_reliquary_supremacy_religious_persecution_dystopian
+			has_modifier = pw_holy_reliquary_supremacy_religious_persecution
+		}
 	}
 
 	effect = {
+		remove_modifier = pw_holy_reliquary_supremacy_religious_persecution_dystopian
 		remove_modifier = pw_holy_reliquary_supremacy_religious_persecution
 	}
 

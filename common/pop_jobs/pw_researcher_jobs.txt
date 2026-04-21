@@ -26,7 +26,7 @@ pw_researcher_particle_supercollider = {
 	resources = {
 		category = planet_physicists
 		produces = {
-			physics_research = 12
+			physics_research = 6
 		}
 		upkeep = {
 			consumer_goods = 2
@@ -50,14 +50,6 @@ pw_researcher_particle_supercollider = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
-		modifier = {
-			factor = 0.65
-			has_trait = trait_presapient_proles
-		}
-		# modifier = {
-		# 	factor = 1.5
-		# 	has_job = pw_researcher_particle_supercollider
-		# }
 		modifier = {
 			factor = 0.8
 			is_enslaved = yes
@@ -110,7 +102,7 @@ pw_researcher_domed_city = {
 	resources = {
 		category = planet_biologists
 		produces = {
-			society_research = 12
+			society_research = 6
 		}
 		upkeep = {
 			consumer_goods = 4
@@ -185,7 +177,7 @@ pw_researcher_abyssal_crater_test_site = {
 	resources = {
 		category = planet_engineers
 		produces = {
-			engineering_research = 12
+			engineering_research = 6
 		}
 		upkeep = {
 			consumer_goods = 2

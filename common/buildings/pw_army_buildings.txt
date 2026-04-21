@@ -131,60 +131,14 @@ pw_building_guardian_angel = {
 	}
 
 	#Soldiers
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_soldier_add = 400
-		}
+	inline_script = {
+		script = jobs/soldiers_add
+		AMOUNT = 500
 	}
 
-	#Necromancer
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { NOT = { has_valid_civic = civic_reanimated_armies }}
-		}
-		modifier = {
-			job_soldier_add = 100
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_valid_civic = civic_reanimated_armies }
-		}
-		modifier = {
-			job_necromancer_add = 100
-		}
-	}
-
-	#Enforcer
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
-		}
-		modifier = {
-			job_enforcer_add = 200
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_active_tradition = tr_psionics_psi_corps }
-		}
-		modifier = {
-			job_telepath_add = 100
-		}
+	inline_script = {
+		script = jobs/enforcers_telepath_add
+		AMOUNT = 200
 	}
 
 	#Gestalt Jobs
@@ -228,57 +182,6 @@ pw_building_guardian_angel = {
 	triggered_desc = {
 		text = pw_guardian_angel_tooltip
 	}
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 	}
-	# 	text = job_soldier_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 		owner = { has_valid_civic = civic_reanimated_armies }
-	# 	}
-	# 	text = job_necromancer_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 		owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
-	# 	}
-	# 	text = job_enforcer_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 		owner = { has_active_tradition = tr_psionics_psi_corps }
-	# 	}
-	# 	text = job_telepath_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = yes }
-	# 	}
-	# 	text = job_warrior_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = yes }
-	# 	}
-	# 	text = job_patrol_drone_effect_desc
-	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1200 }
@@ -474,64 +377,19 @@ pw_building_stellar_sentinel = {
 	}
 
 	country_modifier = {
-		country_naval_cap_add = 25
+		# country_naval_cap_add = 25
+		country_naval_cap_add = 13
 	}
 
 	#Soldiers
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_soldier_add = 500
-		}
+	inline_script = {
+		script = jobs/soldiers_add
+		AMOUNT = 700
 	}
 
-	#Necromancer
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { NOT = { has_valid_civic = civic_reanimated_armies }}
-		}
-		modifier = {
-			job_soldier_add = 200
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_valid_civic = civic_reanimated_armies }
-		}
-		modifier = {
-			job_necromancer_add = 200
-		}
-	}
-
-	#Enforcer
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
-		}
-		modifier = {
-			job_enforcer_add = 200
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_active_tradition = tr_psionics_psi_corps }
-		}
-		modifier = {
-			job_telepath_add = 200
-		}
+	inline_script = {
+		script = jobs/enforcers_telepath_add
+		AMOUNT = 200
 	}
 
 	#Gestalt Jobs
@@ -579,57 +437,6 @@ pw_building_stellar_sentinel = {
 	triggered_desc = {
 		text = pw_guardian_angel_tooltip
 	}
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 	}
-	# 	text = job_soldier_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 		owner = { has_valid_civic = civic_reanimated_armies }
-	# 	}
-	# 	text = job_necromancer_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 		owner = { NOT = { has_active_tradition = tr_psionics_psi_corps }}
-	# 	}
-	# 	text = job_enforcer_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 		owner = { has_active_tradition = tr_psionics_psi_corps }
-	# 	}
-	# 	text = job_telepath_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = yes }
-	# 	}
-	# 	text = job_warrior_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = yes }
-	# 	}
-	# 	text = job_patrol_drone_effect_desc
-	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -831,44 +638,13 @@ pw_building_martial_avenue = {
 	}
 
 	#Reminder: Cannot be Gestalt and must be pacifist!
-	# 7 Jobs added in total (With more from festivities)
+	# 700 Jobs added in total (With more from festivities)
 
-	# #Administrator/Culture workers
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = { is_militarist = yes }
-	# 		owner = { is_megacorp = no }
-	# 	}
-	# 	modifier = {
-	# 		job_politician_add = 100
-	# 		job_culture_worker_add = 200
-	# 	}
-	# }
-	
-	# #Executive/Manager
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = { is_militarist = yes }
-	# 		owner = { is_megacorp = yes }
-	# 	}
-	# 	modifier = {
-	# 		job_politician_add = 100 # executive
-	# 		job_manager_add = 200
-	# 	}
-	# }
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = "is_militarist = yes"
-		# SHOW_JOB_STEWARD_EFFECT_DESC = no
 		AMOUNT = 1
 	}
-	# inline_script = {
-	# 	script = jobs/pw/culture_worker_add
-	# 	OWNER_CONDITION = "is_militarist = yes"
-	# 	AMOUNT = 2
-	# }
 
 	# culture worker (bureaucrat)
 	#Entertainer
@@ -886,48 +662,11 @@ pw_building_martial_avenue = {
 		}
 	}
 
-	#Duelist
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			is_militarist = yes
-	# 			has_valid_civic = civic_warrior_culture
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		job_duelist_add = 200
-	# 	}
-	# }
-
 	#Soldier
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_militarist = yes
-				# NOT = { has_valid_civic = civic_reanimated_armies }
-			}
-		}
-		modifier = {
-			job_soldier_add = 200
-		}
+	inline_script = {
+		script = jobs/soldiers_add
+		AMOUNT = 200
 	}
-
-	#Necromancer
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			is_militarist = yes
-	# 			has_valid_civic = civic_reanimated_armies
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		job_soldier_add = 100
-	# 		job_necromancer_add = 100
-	# 	}
-	# }
 
 	#Stability from ambition
 	triggered_planet_modifier = {
@@ -959,77 +698,6 @@ pw_building_martial_avenue = {
 	# 	text = pw_martial_avenue_tooltip
 	# }
 	
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_militarist = yes }
-	# 		owner = { is_megacorp = no }
-	# 	}
-	# 	text = job_politician_effect_desc
-	# }
-	
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_militarist = yes }
-	# 		owner = { is_megacorp = yes }
-	# 	}
-	# 	text = job_executive_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_militarist = yes }
-	# 		NOT = { owner = { has_valid_civic = civic_warrior_culture }}
-	# 	}
-	# 	text = job_entertainer_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_militarist = yes }
-	# 		owner = { has_valid_civic = civic_warrior_culture }
-	# 	}
-	# 	text = job_duelist_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_militarist = yes }
-	# 		owner = { is_megacorp = no }
-	# 	}
-	# 	text = job_bureaucrat_effect_desc
-	# }
-	
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_militarist = yes }
-	# 		owner = { is_megacorp = yes }
-	# 	}
-	# 	text = job_manager_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_militarist = yes }
-	# 	}
-	# 	text = job_soldier_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_militarist = yes }
-	# 		owner = { has_valid_civic = civic_reanimated_armies }
-	# 	}
-	# 	text = job_necromancer_effect_desc
-	# }
-
 	on_built = {
 		planet_event = { id = pw_wonder.2000 }
 	}

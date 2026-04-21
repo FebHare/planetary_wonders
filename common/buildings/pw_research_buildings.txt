@@ -202,65 +202,6 @@ pw_building_particle_supercollider = {
 		text = pw_empire_unique_lb
 	}
 
-	#Regular Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_head_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_researcher_particle_supercollider_effect_desc
-	# }
-
-	# #Hive Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_brain_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_pw_brain_drone_particle_supercollider_effect_desc
-	# }
-
-	# #Machine Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_calculator_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_pw_calculator_particle_supercollider_effect_desc
-	# }
-
 	on_built = {
 		planet_event = { id = pw_wonder.200 }
 	}
@@ -542,65 +483,6 @@ pw_building_interdimensional_collider = {
 	triggered_desc = {
 		text = pw_empire_unique_lb
 	}
-
-	#Regular Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_head_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_researcher_particle_supercollider_effect_desc
-	# }
-
-	# #Hive Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_brain_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_pw_brain_drone_particle_supercollider_effect_desc
-	# }
-
-	# #Machine Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_calculator_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_pw_calculator_particle_supercollider_effect_desc
-	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -896,81 +778,6 @@ pw_building_domed_city = {
 		text = pw_empire_unique_lb
 	}
 
-	#Regular Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_head_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_researcher_domed_city_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_domed_city_test_subject_effect_desc
-	# }
-
-	# #Hive Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_brain_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_pw_brain_drone_domed_city_effect_desc
-	# }
-
-	# #Machine Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_calculator_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_pw_calculator_domed_city_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = yes }
-	# 	}
-	# 	text = job_pw_domed_city_subject_drone_effect_desc
-	# }
-
 	on_built = {
 		planet_event = { id = pw_wonder.300 }
 	}
@@ -1249,81 +1056,6 @@ pw_building_secluded_sector = {
 		text = pw_empire_unique_lb
 	}
 
-	#Regular Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_head_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_researcher_domed_city_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_domed_city_test_subject_effect_desc
-	# }
-
-	# #Hive Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_brain_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_pw_brain_drone_domed_city_effect_desc
-	# }
-
-	# #Machine Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_calculator_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_pw_calculator_domed_city_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = yes }
-	# 	}
-	# 	text = job_pw_domed_city_subject_drone_effect_desc
-	# }
-
 	on_built = {
 		planet_event = { id = pw_wonder.300 }
 	}
@@ -1592,81 +1324,6 @@ pw_building_psionic_observatory = {
 	triggered_desc = {
 		text = pw_empire_unique_lb
 	}
-
-	#Regular Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_head_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_researcher_domed_city_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_domed_city_test_subject_effect_desc
-	# }
-
-	# #Hive Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_brain_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_pw_brain_drone_domed_city_effect_desc
-	# }
-
-	# #Machine Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_calculator_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_pw_calculator_domed_city_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = yes }
-	# 	}
-	# 	text = job_pw_domed_city_subject_drone_effect_desc
-	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -1950,65 +1607,6 @@ pw_building_abyssal_crater_test_site = {
 		text = pw_empire_unique_lb
 	}
 
-	#Regular Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_head_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_researcher_abyssal_crater_test_site_effect_desc
-	# }
-
-	# #Hive Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_brain_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_pw_brain_drone_abyssal_crater_test_site_effect_desc
-	# }
-
-	# #Machine Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_calculator_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_pw_calculator_abyssal_crater_test_site_effect_desc
-	# }
-
 	on_built = {
 		planet_event = { id = pw_wonder.400 }
 	}
@@ -2276,65 +1874,6 @@ pw_building_abyssal_crater_test_site_habitat = {
 		text = pw_empire_unique_lb
 	}
 
-	#Regular Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_head_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_researcher_abyssal_crater_test_site_effect_desc
-	# }
-
-	# #Hive Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_brain_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_pw_brain_drone_abyssal_crater_test_site_effect_desc
-	# }
-
-	# #Machine Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_calculator_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_pw_calculator_abyssal_crater_test_site_effect_desc
-	# }
-
 	on_built = {
 		planet_event = { id = pw_wonder.400 }
 	}
@@ -2601,65 +2140,6 @@ pw_building_metal_vivarium = {
 	triggered_desc = {
 		text = pw_empire_unique_lb
 	}
-
-	#Regular Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_head_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_researcher_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_regular_empire = yes }
-	# 	}
-	# 	text = job_pw_researcher_abyssal_crater_test_site_effect_desc
-	# }
-
-	# #Hive Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_brain_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_pw_brain_drone_abyssal_crater_test_site_effect_desc
-	# }
-
-	# #Machine Jobs
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_calculator_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_pw_calculator_abyssal_crater_test_site_effect_desc
-	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -2938,18 +2418,6 @@ pw_building_grand_archive = {
 	triggered_desc = {
 		text = pw_building_grand_archive_tooltip
 	}
-
-	# triggered_desc = {
-	# 	text = job_pw_grand_archivist_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { has_country_flag = pw_grand_archive_holoarchive_master_archivist_appointed }
-	# 	}
-	# 	text = job_pw_master_archivist_effect_desc
-	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1600 }

@@ -1,0 +1,58 @@
+# Based on "jobs/enforcers_add" inline script.
+# Usage:
+# inline_script = {
+# 	script = jobs/enforcers_telepath_add
+# 	AMOUNT = 200
+# }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_psi_corps_tradition = yes
+				not = {
+					has_valid_civic = civic_dystopian_society
+				}
+			}
+		}
+		job_telepath_add = $AMOUNT$
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_psi_corps_tradition = yes
+				has_valid_civic = civic_dystopian_society
+			}
+		}
+		job_dystopian_telepath_add = $AMOUNT$
+	}
+
+	triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+			has_psi_corps_tradition = no
+			not = {
+				has_valid_civic = civic_dystopian_society
+			}
+		}
+	}
+	job_enforcer_add = $AMOUNT$
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+			has_psi_corps_tradition = no
+			has_valid_civic = civic_dystopian_society
+		}
+	}
+	job_dystopian_enforcer_add = $AMOUNT$
+}

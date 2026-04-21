@@ -51,7 +51,7 @@ pw_art_mod_agrarian_idyll = {
 	pop_ethic_pacifist_attraction_mult = 0.45
 	planet_amenities_mult = 0.10
 	planet_jobs_consumer_goods_produces_mult = 0.10
-	planet_farmers_produces_mult = 0.30
+	planet_farmers_food_produces_add = 0.75
 }
 
 pw_art_mod_spiritualist = {
@@ -394,12 +394,12 @@ pw_art_mod_hedonism = {
 
 pw_art_mod_metallic_art_subsides = {
 	country_unity_produces_mult = 0.10
-	planet_metallurgists_upkeep_mult = -0.15
+	planet_metallurgists_upkeep_mult = -0.075
 }
 
 pw_art_mod_masterful_artificers = {
 	planet_traders_produces_mult = 0.10
-	planet_artisans_upkeep_mult = -0.15
+	planet_artisans_upkeep_mult = -0.075
 }
 
 pw_art_mod_cultural_censorship = {
