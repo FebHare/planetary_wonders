@@ -301,7 +301,6 @@ pw_building_living_spire_1 = {
 		}
 		modifier = {
 			planet_housing_add = 500
-			job_clerk_add = 200
 		}
 	}
 	#Habitat
@@ -311,8 +310,12 @@ pw_building_living_spire_1 = {
 		}
 		modifier = {
 			planet_housing_add = 400
-			job_clerk_add = 200
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "NOR = { merg_is_hab_ringworld = yes merg_is_arcology = yes }"
+		AMOUNT = 200
 	}
 	#Ecu
 	triggered_planet_modifier = {
@@ -321,8 +324,12 @@ pw_building_living_spire_1 = {
 		}
 		modifier = {
 			planet_housing_add = 1000
-			job_clerk_add = 400
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "merg_is_arcology = yes"
+		AMOUNT = 400
 	}
 	#Ring World
 	triggered_planet_modifier = {
@@ -331,8 +338,12 @@ pw_building_living_spire_1 = {
 		}
 		modifier = {
 			planet_housing_add = 2000
-			job_clerk_add = 800
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "merg_is_hab_ringworld = yes"
+		AMOUNT = 800
 	}
 
 	triggered_desc = {
@@ -603,8 +614,12 @@ pw_building_living_spire_2 = {
 		}
 		modifier = {
 			planet_housing_add = 1000
-			job_clerk_add = 400
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "NOR = { merg_is_hab_ringworld = yes merg_is_habitat = yes merg_is_arcology = yes }"
+		AMOUNT = 400
 	}
 	#Habitat
 	triggered_planet_modifier = {
@@ -613,8 +628,12 @@ pw_building_living_spire_2 = {
 		}
 		modifier = {
 			planet_housing_add = 800
-			job_clerk_add = 200
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "merg_is_habitat = yes"
+		AMOUNT = 200
 	}
 	#Ecu
 	triggered_planet_modifier = {
@@ -623,8 +642,12 @@ pw_building_living_spire_2 = {
 		}
 		modifier = {
 			planet_housing_add = 2000
-			job_clerk_add = 800
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "merg_is_arcology = yes"
+		AMOUNT = 800
 	}
 	#Ring World
 	triggered_planet_modifier = {
@@ -633,8 +656,12 @@ pw_building_living_spire_2 = {
 		}
 		modifier = {
 			planet_housing_add = 3000
-			job_clerk_add = 1200
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "merg_is_hab_ringworld = yes"
+		AMOUNT = 1200
 	}
 
 	triggered_desc = {
@@ -886,8 +913,12 @@ pw_building_living_spire_3 = {
 		}
 		modifier = {
 			planet_housing_add = 1500
-			job_clerk_add = 1000
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "NOR = { merg_is_hab_ringworld = yes merg_is_habitat = yes merg_is_arcology = yes }"
+		AMOUNT = 1000
 	}
 	#Habitat
 	triggered_planet_modifier = {
@@ -896,8 +927,12 @@ pw_building_living_spire_3 = {
 		}
 		modifier = {
 			planet_housing_add = 1000
-			job_clerk_add = 500
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "merg_is_habitat = yes"
+		AMOUNT = 500
 	}
 	#Ecu
 	triggered_planet_modifier = {
@@ -906,8 +941,12 @@ pw_building_living_spire_3 = {
 		}
 		modifier = {
 			planet_housing_add = 3000
-			job_clerk_add = 1500
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "merg_is_arcology = yes"
+		AMOUNT = 1500
 	}
 	#Ring World
 	triggered_planet_modifier = {
@@ -916,8 +955,12 @@ pw_building_living_spire_3 = {
 		}
 		modifier = {
 			planet_housing_add = 4000
-			job_clerk_add = 2000
 		}
+	}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "merg_is_hab_ringworld = yes"
+		AMOUNT = 2000
 	}
 
 	triggered_desc = {

@@ -1061,14 +1061,10 @@ pw_building_forbidden_city = {
 	}
 
 	#Clerk
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_authoritarian = yes }
-		}
-		modifier = {
-			job_clerk_add = 400
-		}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "owner = { is_authoritarian = yes} "
+		AMOUNT = 400
 	}
 
 	inline_script = {

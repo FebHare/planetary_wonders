@@ -73,8 +73,12 @@ pw_building_bloodsports_arena = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_militarist_attraction_mult = 0.20
-		job_clerk_add = 100
 		job_entertainer_add = 100
+	}
+
+	inline_script = {
+		script = jobs/clerks_add
+		AMOUNT = 100
 	}
 
 	triggered_planet_modifier = {
@@ -193,8 +197,12 @@ pw_building_meditation_garden = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_pacifist_attraction_mult = 0.20
-		job_clerk_add = 100
 		job_bureaucrat_add = 100
+	}
+
+	inline_script = {
+		script = jobs/clerks_add
+		AMOUNT = 100
 	}
 
 	triggered_planet_modifier = {
@@ -314,7 +322,11 @@ pw_building_innovation_hub = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_materialist_attraction_mult = 0.20
-		job_clerk_add = 200
+	}
+
+	inline_script = {
+		script = jobs/clerks_add
+		AMOUNT = 200
 	}
 
 	triggered_planet_modifier = {
@@ -432,7 +444,11 @@ pw_building_salvation_shrine = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_spiritualist_attraction_mult = 0.20
-		job_clerk_add = 100
+	}
+
+	inline_script = {
+		script = jobs/clerks_add
+		AMOUNT = 100
 	}
 
 	triggered_planet_modifier = {
@@ -567,8 +583,12 @@ pw_building_exotic_beauty_center = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_xenophile_attraction_mult = 0.20
-		job_clerk_add = 100
 		job_entertainer_add = 100
+	}
+
+	inline_script = {
+		script = jobs/clerks_add
+		AMOUNT = 100
 	}
 
 	triggered_planet_modifier = {
@@ -687,8 +707,12 @@ pw_building_national_pride_gallery = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_xenophobe_attraction_mult = 0.20
-		job_clerk_add = 100
 		job_entertainer_add = 100
+	}
+
+	inline_script = {
+		script = jobs/clerks_add
+		AMOUNT = 100
 	}
 
 	triggered_planet_modifier = {
@@ -809,16 +833,10 @@ pw_building_aristocracy_tower = {
 		job_politician_add = 100 # merchant
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_ethic = ethic_fanatic_authoritarian
-			}
-		}
-		modifier = {
-			job_clerk_add = 100
-		}
+	inline_script = {
+		script = jobs/pw/clerks_add
+		CONDITION = "owner = { has_ethic = ethic_fanatic_authoritarian } "
+		AMOUNT = 100
 	}
 
 	triggered_planet_modifier = {
@@ -925,7 +943,11 @@ pw_building_factory_city = {
 	planet_modifier = {
 		branch_office_value_mult = 0.15
 		pop_ethic_egalitarian_attraction_mult = 0.20
-		job_clerk_add = 100
+	}
+
+	inline_script = {
+		script = jobs/clerks_add
+		AMOUNT = 100
 	}
 
 	inline_script = {
@@ -1043,8 +1065,12 @@ pw_building_tax_haven = {
 		branch_office_value_mult = 0.15
 		planet_crime_add = 50
 		planet_traders_produces_mult = 0.10
-		job_clerk_add = 100
 		job_politician_add = 100 # merchant
+	}
+
+	inline_script = {
+		script = jobs/clerks_add
+		AMOUNT = 100
 	}
 
 	triggered_desc = {

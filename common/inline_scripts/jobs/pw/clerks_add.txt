@@ -1,0 +1,36 @@
+# Based on "jobs/clerks_add" inline script.
+# Usage:
+#inline_script = {
+#	script = jobs/pw/clerks_add
+#	CONDITION = "owner = { is_egalitarian = yes} "
+#	AMOUNT = 100
+#}
+# CONDITION paramater assumed there is owner.
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		$CONDITION$
+		owner = {
+			is_gestalt = no
+			is_tankbound_empire = no
+		}
+	}
+	job_clerk_add = $AMOUNT$
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		$CONDITION$
+		owner = { is_tankbound_empire = yes }
+	}
+	job_production_overseer_add = $AMOUNT$
+}
+
+# triggered_planet_modifier = {
+# 	potential = {
+# 		exists = owner
+# 		owner = { is_gestalt = yes }
+# 	}
+# 	job_logistics_drone_add = $AMOUNT$
+# }
