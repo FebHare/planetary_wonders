@@ -1013,7 +1013,7 @@ pw_tech_reinforced_military_production = {
 	}
 
 	modifier = {
-		planet_metallurgists_produces_mult = 0.05
+		planet_metallurgists_alloys_produces_add = 0.05
 		ship_armor_mult = 0.05
 	}
 

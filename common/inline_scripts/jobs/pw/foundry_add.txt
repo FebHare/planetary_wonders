@@ -1,4 +1,4 @@
-# It adds "job_XXX_add" only. On buildings, use it with "jobs/pw/foundry_effect_desc". On deposits, use it only, without "jobs/pw/foundry_effect_desc".
+# It adds "job_XXX_add" only.
 # Usage:
 #inline_script = {
 #	script = jobs/pw/foundry_add

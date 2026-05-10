@@ -297,7 +297,8 @@
 
     pw_holy_reliquary_supremacy_religious_persecution: "Religious Persecution"
     pw_holy_reliquary_supremacy_religious_persecution_desc: "The heretics and morally deprived elements of this planet are being persecuted and cleaned, all in the name of the $pw_holy_reliquary.defender_of_the_faith$."
-
+    pw_holy_reliquary_supremacy_religious_persecution_dystopian: "$pw_holy_reliquary_supremacy_religious_persecution$"
+    pw_holy_reliquary_supremacy_religious_persecution_dystopian_desc: "$pw_holy_reliquary_supremacy_religious_persecution_desc$"
     pw_holy_reliquary_supremacy_call_to_arms: "Call to Arms"
     pw_holy_reliquary_supremacy_call_to_arms_desc: "The $pw_holy_reliquary.defender_of_the_faith$ has inspired many believers on this planet to take up arms and defend our Faith from any who would threaten it."
     pw_holy_reliquary_supremacy_call_to_arms.tooltip: "§GAllows us to recruit Assault Acolytes from this planet§!."

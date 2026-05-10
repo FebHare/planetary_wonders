@@ -78,7 +78,7 @@
 #@pw_influence_production = 0.1
 
 #Regular Jobs:
-@pw_building_ruler_jobs = 1
+@pw_building_ruler_jobs = 100
 
 #Modifiers production:
 @pw_building_research_mod = 0.10
@@ -108,7 +108,7 @@
 @pw_decision_resource_influence_cost = 25
 @pw_decision_resource_rare_resource_cost = 250
 @pw_decision_resource_devastation = 20
-@pw_decision_resource_mod = 0.20
+@pw_decision_resource_mod = 0.30
 @pw_decision_resource_duration = 3600 # 10 years
 
 #Space Elevator Infrastructure

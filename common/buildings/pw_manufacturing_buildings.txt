@@ -289,7 +289,7 @@ pw_building_mantle_crucible = {
 			}
 		}
 		modifier = {
-			planet_metallurgists_produces_mult = 0.05
+			planet_metallurgists_alloys_produces_add = 0.05
 		}
 	}
 
@@ -302,49 +302,13 @@ pw_building_mantle_crucible = {
 			}
 		}
 		modifier = {
-			planet_artisans_produces_mult = 0.05
+			planet_artisans_consumer_goods_produces_add = 0.05
 		}
 	}
 
 	triggered_desc = {
 		text = pw_planet_wonder_lb
 	}
-
-	# inline_script = {
-	# 	script = jobs/pw/foundry_effect_desc
-	# 	OWNER_CONDITION = ""
-	# }
-
-	# inline_script = {
-	# 	script = jobs/pw/factory_effect_desc
-	# 	OWNER_CONDITION = "country_uses_consumer_goods = yes"
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 		owner = { country_uses_consumer_goods = no }
-	# 	}
-	# 	text = job_miner_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_hive_empire = yes }
-	# 	}
-	# 	text = job_mining_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 		owner = { country_uses_consumer_goods = no }
-	# 	}
-	# 	text = job_mining_drone_effect_desc
-	# }
 
 	on_built = {
 		planet_event = { id = pw_wonder.1300 }
@@ -619,8 +583,8 @@ pw_building_titan_forge = {
 			}
 		}
 		modifier = {
-			planet_metallurgists_produces_mult = 0.15
-			planet_metallurgists_upkeep_mult = 0.10
+			planet_metallurgists_alloys_produces_add = 0.15
+			planet_metallurgists_upkeep_mult = 0.05
 		}
 	}
 
@@ -631,27 +595,6 @@ pw_building_titan_forge = {
 	triggered_desc = {
 		text = pw_empire_unique_lb
 	}
-
-	# inline_script = {
-	# 	script = jobs/pw/foundry_effect_desc
-	# 	OWNER_CONDITION = ""
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 	}
-	# 	text = job_politician_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_replicator_effect_desc
-	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.
@@ -906,8 +849,8 @@ pw_building_industrial_hearth = {
 			}
 		}
 		modifier = {
-			planet_artisans_produces_mult = 0.15
-			planet_artisans_upkeep_mult = 0.10
+			planet_artisans_consumer_goods_produces_add = 0.15
+			planet_artisans_upkeep_mult = 0.05
 		}
 	}
 
@@ -918,38 +861,6 @@ pw_building_industrial_hearth = {
 	triggered_desc = {
 		text = pw_empire_unique_lb
 	}
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 	}
-	# 	text = job_pw_poly_artisan_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_gestalt = no }
-	# 	}
-	# 	text = job_merchant_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_pw_poly_artisan_drone_effect_desc
-	# }
-
-	# triggered_desc = {
-	# 	trigger = {
-	# 		exists = owner
-	# 		owner = { is_machine_empire = yes }
-	# 	}
-	# 	text = job_replicator_effect_desc
-	# }
 
 	on_built = {
 		#This is an upgrade, so on_building_upgraded triggers for this.

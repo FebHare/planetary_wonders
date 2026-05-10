@@ -95,7 +95,7 @@ pw_calculator_particle_supercollider = {
 	resources = {
 		category = planet_physicists
 		produces = {
-			physics_research = 12
+			physics_research = 6
 		}
 		upkeep = {
 			trigger = {
@@ -189,7 +189,7 @@ pw_calculator_domed_city = {
 	resources = {
 		category = planet_biologists
 		produces = {
-			society_research = 12
+			society_research = 6
 		}
 		upkeep = {
 			trigger = {
@@ -283,7 +283,7 @@ pw_calculator_abyssal_crater_test_site = {
 	resources = {
 		category = planet_engineers
 		produces = {
-			engineering_research = 12
+			engineering_research = 6
 		}
 		# upkeep = {
 		# 	energy = 6

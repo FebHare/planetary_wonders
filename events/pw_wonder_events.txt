@@ -13723,7 +13723,7 @@ planet_event = {
 			owner = {
 				OR = {
 					has_origin = origin_overtuned
-					has_toxic_baths = yes
+					is_toxic_baths_empire = yes
 				}
 			}
 		}
@@ -14348,7 +14348,7 @@ planet_event = {
 	option = {
 		name = pw_wonder.2310.noxious_spa
 		trigger = {
-			owner = { has_toxic_baths = yes }
+			owner = { is_toxic_baths_empire = yes }
 		}
 		custom_tooltip = pw_wonder.2120.tooltip
 		add_modifier = {
@@ -14360,7 +14360,7 @@ planet_event = {
 		name = pw_wonder.2310.noxious_spa
 		trigger = {
 			owner = { has_valid_civic = civic_machine_servitor }
-			owner = { has_toxic_baths = yes }
+			owner = { is_toxic_baths_empire = yes }
 		}
 		custom_tooltip = pw_wonder.2120.tooltip
 		add_modifier = {

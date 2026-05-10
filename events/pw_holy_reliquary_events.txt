@@ -2363,6 +2363,7 @@ country_event = {
 				NOR = {
 					has_modifier = pw_holy_reliquary_supremacy_call_to_arms
 					has_modifier = pw_holy_reliquary_supremacy_religious_persecution
+					has_modifier = pw_holy_reliquary_supremacy_religious_persecution_dystopian
 				}
 			}
 			save_event_target_as = pw_holy_reliquary_call_to_arms_planet

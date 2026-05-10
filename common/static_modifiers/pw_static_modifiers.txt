@@ -456,23 +456,23 @@ pw_mod_gaia_unstable_weather = {
 pw_mod_mantle_crucible_alloys = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_mantle_crucible_alloys.dds"
 	icon_frame = 2
-	planet_metallurgists_produces_mult = 0.05
-	planet_metallurgists_upkeep_mult = 0.05
+	planet_metallurgists_alloys_produces_add = 0.05
+	planet_metallurgists_upkeep_mult = 0.025
 }
 
 pw_mod_mantle_crucible_consumer_goods = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_mod_mantle_crucible_consumer_goods.dds"
 	icon_frame = 2
-	planet_artisans_produces_mult = 0.05
-	planet_artisans_upkeep_mult = 0.05
+	planet_artisans_consumer_goods_produces_add = 0.05
+	planet_artisans_upkeep_mult = 0.025
 }
 
 pw_mod_mantle_crucible_uncompromising_industry = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_drilling_for_gas.dds"
 	icon_frame = @pw_icon_frame_yellow
 
-	planet_metallurgists_produces_mult = 0.05
-	planet_artisans_produces_mult = 0.05
+	planet_metallurgists_alloys_produces_add = 0.05
+	planet_artisans_consumer_goods_produces_add = 0.05
 	bonus_pop_growth_mult = -0.10
 }
 
@@ -484,7 +484,7 @@ pw_mod_titan_forge_uncompromising_industry = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_drilling_for_gas.dds"
 	icon_frame = @pw_icon_frame_yellow
 
-	planet_metallurgists_produces_mult = 0.10
+	planet_metallurgists_alloys_produces_add = 0.10
 	bonus_pop_growth_mult = -0.10
 	pop_environment_tolerance = -0.05
 }
@@ -493,7 +493,7 @@ pw_mod_industrial_heart_uncompromising_industry = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_drilling_for_gas.dds"
 	icon_frame = @pw_icon_frame_yellow
 
-	planet_artisans_produces_mult = 0.10
+	planet_artisans_consumer_goods_produces_add = 0.10
 	bonus_pop_growth_mult = -0.10
 	pop_environment_tolerance = -0.05
 }
@@ -734,6 +734,15 @@ pw_holy_reliquary_supremacy_religious_persecution = {
 	job_enforcer_add = 100
 }
 
+pw_holy_reliquary_supremacy_religious_persecution_dystopian = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_martial_law.dds"
+	icon_frame = @pw_icon_frame_green
+	pop_happiness = -0.15
+	planet_stability_add = 5
+	pop_ethic_spiritualist_attraction_mult = 0.20
+	job_dystopian_enforcer_add = 100
+}
+
 #Event: Happy Iconoclast
 pw_holy_reliquary_appeased_iconoclasts = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_unity_symbol.dds"
@@ -918,6 +927,7 @@ pw_pm_nostalgia_paradise_theme_golden_age_machine = {
 pw_pm_nostalgia_paradise_theme_war_epoch = {
 	icon = "gfx/interface/icons/planet_modifiers/pw_pm_nostalgia_paradise_theme_war_epoch.dds"
 	icon_frame = @pw_icon_frame_green
+	# Only resort colony will have this pm, so the job will be soldier always.
 	job_soldier_add = 100
 	army_defense_damage_mult = 0.10
 	planet_resettlement_unemployed_destination_mult = 0.10

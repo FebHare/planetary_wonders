@@ -70,6 +70,12 @@ pw_edict_panspectron = {
 		pw_tech_utilitarian_vigilance
 	}
 
+	potential = {
+		NOT = {
+			has_valid_civic = civic_dystopian_society
+		}
+	}
+
 	allow = {
 		any_owned_planet = {
 			has_active_building = pw_building_panopticon
@@ -78,6 +84,59 @@ pw_edict_panspectron = {
 
 	ai_weight = {
 		weight = @EdictLowPrio
+	}
+
+	show_tech_unlock_if = {
+		NOT = {
+			has_valid_civic = civic_dystopian_society
+		}
+	}
+}
+
+pw_edict_panspectron_dystopian = {
+	length = @pw_EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	resources = {
+		category = edicts
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	modifier = {
+		job_dystopian_enforcer_add = 200
+		intel_encryption_add = 1
+		pop_government_ethic_attraction = 0.50
+		pop_cat_worker_political_power = -0.25
+		pop_happiness = -0.25
+	}
+
+	effect = {
+		custom_tooltip = pw_edict_panspectron_tooltip
+	}
+
+	prerequisites = {
+		pw_tech_utilitarian_vigilance
+	}
+
+	potential = {
+		has_valid_civic = civic_dystopian_society
+	}
+
+	allow = {
+		any_owned_planet = {
+			has_active_building = pw_building_panopticon
+		}
+	}
+
+	ai_weight = {
+		weight = @EdictLowPrio
+	}
+
+	show_tech_unlock_if = {
+		has_valid_civic = civic_dystopian_society
 	}
 }
 

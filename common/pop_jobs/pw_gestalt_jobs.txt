@@ -37,23 +37,13 @@ pw_mining_coordinator = {
 
 	planet_modifier = {
 		planet_jobs_minerals_produces_mult = @pw_job_director_resource_mult
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
 		planet_amenities_no_happiness_add = @pw_job_director_resource_amenities
-	}
-	triggered_planet_modifier = {
-		potential = {
-			prev = { has_trait = trait_charismatic }
-		}
-		modifier = {
-			planet_amenities_no_happiness_add = 20
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			prev = { has_trait = trait_repugnant }
-		}
-		modifier = {
-			planet_amenities_no_happiness_add = -20
-		}
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
 	weight = {
@@ -115,23 +105,13 @@ pw_energy_coordinator = {
 
 	planet_modifier = {
 		planet_jobs_energy_produces_mult = @pw_job_director_resource_mult
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
 		planet_amenities_no_happiness_add = @pw_job_director_resource_amenities
-	}
-	triggered_planet_modifier = {
-		potential = {
-			prev = { has_trait = trait_charismatic }
-		}
-		modifier = {
-			planet_amenities_no_happiness_add = 20
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			prev = { has_trait = trait_repugnant }
-		}
-		modifier = {
-			planet_amenities_no_happiness_add = -20
-		}
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
 	weight = {
@@ -197,23 +177,13 @@ pw_food_coordinator = {
 
 	planet_modifier = {
 		planet_jobs_food_produces_mult = @pw_job_director_resource_mult
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
 		planet_amenities_no_happiness_add = @pw_job_director_resource_amenities
-	}
-	triggered_planet_modifier = {
-		potential = {
-			prev = { has_trait = trait_charismatic }
-		}
-		modifier = {
-			planet_amenities_no_happiness_add = 20
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			prev = { has_trait = trait_repugnant }
-		}
-		modifier = {
-			planet_amenities_no_happiness_add = -20
-		}
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
 	weight = {
@@ -270,10 +240,10 @@ pw_enigma_decipher = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			society_research = 2
-			physics_research = 2
-			engineering_research = 2
-			unity = 2
+			society_research = 1
+			physics_research = 1
+			engineering_research = 1
+			unity = 1
 		}
 		upkeep = {
 			energy = 15
@@ -288,39 +258,6 @@ pw_enigma_decipher = {
 	weight = {
 		weight = 50
 		mult = value:job_weights_research_modifier|JOB|pw_enigma_decipher|
-		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_trait = trait_robot_logic_engines
-				has_trait = trait_intelligent
-			}
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_engineers
-				has_trait = trait_natural_physicists
-				has_trait = trait_natural_sociologists
-			}
-		}
-		modifier = {
-			factor = 0.9
-			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_trait = trait_traditional
-				has_trait = trait_robot_propaganda_machines
-			}
-		}
 		modifier = {
 			factor = 5
 			planet = { planet_crime > 22 }
@@ -356,7 +293,7 @@ pw_domed_city_subject_drone = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			society_research = 5
+			society_research = 2.5
 		}
 		upkeep = {
 			minerals = 8
@@ -377,14 +314,7 @@ pw_domed_city_subject_drone = {
 		weight = @simple_drone_job_weight
 		mult = value:job_weights_research_modifier|JOB|pw_domed_city_subject_drone|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_society_research_produces_mult|
-		modifier = {
-			factor = 1.25
-			has_trait = trait_charismatic
-		}
-		modifier = {
-			factor = 0.8
-			has_trait = trait_repugnant
-		}
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
 			factor = 0.01 # crisis purge
 			exists = planet
@@ -429,7 +359,7 @@ pw_poly_artisan_drone = {
 		category = planet_artisans
 		produces = {
 			consumer_goods = 12
-			unity = 2
+			unity = 1
 		}
 		upkeep = {
 			minerals = 15
@@ -444,10 +374,6 @@ pw_poly_artisan_drone = {
 			exists = owner
 			owner = { has_valid_civic = civic_machine_assimilator }
 		}
-		# modifier = {
-		# 	factor = 2
-		# 	has_job = pw_poly_artisan_drone
-		# }
 	}
 }
 
@@ -478,10 +404,10 @@ pw_lunar_archivist_gestalt = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			physics_research = 4
-			engineering_research = 4
-			society_research = 4
-			unity = 2
+			physics_research = 2
+			engineering_research = 2
+			society_research = 2
+			unity = 1
 		}
 		upkeep = {
 			trigger = {
@@ -520,105 +446,17 @@ pw_lunar_archivist_gestalt = {
 			has_living_standard = { type = living_standard_academic_privilege }
 		}
 		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_trait = trait_robot_logic_engines
-				has_trait = trait_intelligent
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_brainslug
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_engineers
-				has_trait = trait_natural_physicists
-				has_trait = trait_natural_sociologists
-			}
-		}
-		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 1.2
-			has_ethic = ethic_materialist
-		}
-		modifier = {
-			factor = 0.65
-			has_trait = trait_presapient_proles
 		}
 		# modifier = {
 		# 	factor = 1.5
 		# 	can_work_specific_job = pw_lunar_archivist_gestalt
 		# }
 		modifier = {
-			factor = 1.5
-			has_trait = trait_latent_psionic
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_psionic
-		}
-		modifier = {
-			factor = 0.1
-			has_trait = trait_enigmatic_intelligence_failed
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_trait = trait_enigmatic_intelligence
-				has_trait = trait_enigmatic_intelligence_poor
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_presapient_natural_intellectuals
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
-			}
-		}
-		modifier = {
 			factor = 0.8
 			is_enslaved = yes
 			has_slavery_type = { type = slavery_indentured }
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_void_dweller_1
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_necrophage
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_robot_propaganda_machines
-			OR = {
-				is_non_sapient_robot = yes
-				is_shackled_robot = yes
-			}
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_trait = trait_robot_propaganda_machines
-				has_trait = trait_traditional
-			}
-		}
-		modifier = {
-			factor = 0.5
-			has_trait = trait_quarrelsome
 		}
 	}
 }
@@ -659,7 +497,7 @@ pw_logistics_drone = {
 					has_valid_civic = civic_machine_maintenance_protocols
 				}
 			}
-			unity = 2.5
+			unity = 1.3
 		}
 		upkeep = {
 			trigger = {
@@ -695,34 +533,14 @@ pw_logistics_drone = {
 	}
 
 	planet_modifier = {
-		planet_amenities_no_happiness_add = 40
 		planet_jobs_produces_mult = 0.005
 	}
 	triggered_planet_modifier = {
 		potential = {
-			prev = {
-				OR = {
-					has_trait = trait_robot_emotion_emulators
-					has_trait = trait_charismatic
-				}
-			}
+			always = yes
 		}
-		modifier = {
-			planet_amenities_no_happiness_add = 20
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			prev = {
-				OR = {
-					has_trait = trait_robot_uncanny
-					has_trait = trait_repugnant
-				}
-			}
-		}
-		modifier = {
-			planet_amenities_no_happiness_add = -20
-		}
+		planet_amenities_no_happiness_add = 40
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
 	triggered_planet_modifier = {
@@ -730,22 +548,14 @@ pw_logistics_drone = {
 			exists = owner
 			owner = { has_active_tradition = tr_synchronicity_integrated_preservation }
 		}
-		modifier = {
-			planet_amenities_no_happiness_add = 20
-		}
-	}
+		planet_amenities_no_happiness_add = 20
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|	}
 
 	weight = {
 		weight = @synapse_drone_job_weight
 		mult = value:job_weights_modifier|JOB|pw_logistics_drone|RESOURCE|unity|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|planet_jobs_produces_mult|
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_trait = trait_traditional
-				has_trait = trait_robot_propaganda_machines
-			}
-		}
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
 			factor = 2
 			planet = {
@@ -792,9 +602,9 @@ pw_tomb_surveyor = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			unity = 2
-			physics_research = 4
-			society_research = 4
+			unity = 1
+			physics_research = 2
+			society_research = 2
 		}
 		upkeep = {
 			minerals = 3
@@ -805,31 +615,6 @@ pw_tomb_surveyor = {
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_research_modifier|JOB|pw_tomb_surveyor|
-		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_trait = trait_robot_logic_engines
-				has_trait = trait_intelligent
-			}
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_physicists
-				has_trait = trait_natural_sociologists
-			}
-		}
-		modifier = {
-			factor = 0.65
-			OR = {
-				has_trait = trait_syncretic_proles
-				has_trait = trait_presapient_proles
-			}
-		}
 		modifier = {
 			factor = 0.9
 			exists = owner
@@ -849,10 +634,6 @@ pw_tomb_surveyor = {
 					}
 				}
 			}
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_necrophage
 		}
 	}
 }
@@ -887,8 +668,8 @@ pw_preserver_drone = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			unity = 2
-			society_research = 4
+			unity = 1
+			society_research = 2
 		}
 		upkeep = {
 			minerals = 2
@@ -924,31 +705,6 @@ pw_preserver_drone = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_research_modifier|JOB|pw_preserver_drone|
 		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_trait = trait_robot_logic_engines
-				has_trait = trait_intelligent
-			}
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_physicists
-				has_trait = trait_natural_sociologists
-			}
-		}
-		modifier = {
-			factor = 0.65
-			OR = {
-				has_trait = trait_syncretic_proles
-				has_trait = trait_presapient_proles
-			}
-		}
-		modifier = {
 			factor = 0.9
 			exists = owner
 			years_passed < 1
@@ -967,10 +723,6 @@ pw_preserver_drone = {
 					}
 				}
 			}
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_necrophage
 		}
 	}
 }
@@ -1005,7 +757,7 @@ pw_banquet_steward_drone = {
 	resources = {
 		category = planet_soldiers
 		produces = {
-			unity = 2
+			unity = 1
 		}
 		upkeep = {
 			trigger = {
@@ -1024,20 +776,10 @@ pw_banquet_steward_drone = {
 	}
 
 	country_modifier = {
-		country_naval_cap_add = 6
+		country_naval_cap_add = 3
 	}
 
-	triggered_country_modifier = {
-		potential = {
-			planet = {
-				exists = owner
-				owner = { has_technology = "tech_ground_defense_planning" }
-			}
-		}
-		modifier = {
-			country_naval_cap_add = 2
-		}
-	}
+	inline_script = "output/soldier_triggered_modifiers"
 
 	planet_modifier = {
 		planet_defense_armies_add = 2
